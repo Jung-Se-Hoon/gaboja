@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/happy"
+        android:text="연령대"
+        android:textColor="@color/nologagga_color"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/age_10_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="10~20대"
+            />
+
+        <RadioButton
+            android:id="@+id/age_30_40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="30~40대"
+            />
+
+        <RadioButton
+            android:id="@+id/age_50_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="50~60대"
+            />
+
+        <RadioButton
+            android:id="@+id/age_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="70대 ~" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D6D0D0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/happy"
+        android:text="계절"
+        android:textColor="@color/nologagga_color"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/spring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="봄" />
+
+        <RadioButton
+            android:id="@+id/summer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="여름" />
+
+        <RadioButton
+            android:id="@+id/autumn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="가을" />
+
+        <RadioButton
+            android:id="@+id/winter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="겨울" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D6D0D0" />
+
+    <TextView
+        android:id="@+id/cost_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/happy"
+        android:text="비용"
+        android:textColor="@color/nologagga_color"
+        android:textSize="8pt"
+        android:textStyle="bold"
+        />
+
+    <SeekBar
+        android:id="@+id/costbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:layout_margin="15dp"
+        android:progress="0"
+        android:thumb="@drawable/seekbar_thumb"
+        android:progressDrawable="@drawable/seekbar"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D6D0D0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/happy"
+        android:text="유형"
+        android:textStyle="bold"
+        android:textColor="@color/nologagga_color"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/culture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="문화" />
+
+        <CheckBox
+            android:id="@+id/nature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="자연" />
+
+        <CheckBox
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="도시"/>
+
+        <CheckBox
+            android:id="@+id/leisure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="레저"/>
+
+        <CheckBox
+            android:id="@+id/food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="음식" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="#D6D0D0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/happy"
+        android:text="지역"
+        android:textStyle="bold"
+        android:textColor="@color/nologagga_color"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/ggd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="경기도" />
+
+        <CheckBox
+            android:id="@+id/gwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="강원도" />
+
+        <CheckBox
+            android:id="@+id/ccnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="충청남도" />
+
+        <CheckBox
+            android:id="@+id/ccbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="충청북도" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        >
+
+        <CheckBox
+            android:id="@+id/jlnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="전라남도" />
+
+        <CheckBox
+            android:id="@+id/jlbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="전라북도" />
+
+        <CheckBox
+            android:id="@+id/gsnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="경상남도" />
+
+        <CheckBox
+            android:id="@+id/gsbd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/happy"
+            android:text="경상북도" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/init" />
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="336dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/happy"
+            android:text="필터 결과"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
